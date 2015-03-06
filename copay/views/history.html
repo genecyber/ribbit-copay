@@ -1,0 +1,69 @@
+<div class="transactions" data-ng-controller="HistoryController" data-ng-init="update()">
+  <div class="row">
+    <div class="large-12 medium-12 small-12 columns">
+      <h1 class="hide-for-large-up">{{$root.title}}</h1> 
+      <div ng-if="loading && !blockchain_txs[0].txid" class="m20b">
+        <i class="fi-bitcoin-circle icon-rotate spinner"></i> 
+        <span translate>Loading...</span>
+      </div>
+      <div ng-if="!blockchain_txs[0].txid && !loading">
+        <em><strong translate>No transactions yet.</strong></em>
+      </div>
+    </div>
+  </div>
+  <div class="row" ng-if="blockchain_txs[0].txid">
+    <div class="large-12 columns">
+    <div class="panel oh">
+    <div ng-repeat="btx in blockchain_txs | orderBy:'-ts'"  ng-click="openTxModal(btx)" ng-class="{'line-b':!$last}" class="last-transactions-content">
+
+      <div class="row">
+        <div class="large-6 medium-6 small-12 columns size-16">
+          <div class="ellipsis m10b">
+            <time  ng-if="btx.ts">{{btx.ts | amTimeAgo}}</time>
+            <span class="label alert" ng-show="!btx.ts && (!btx.confirmations || btx.confirmations == 0)">
+              <span translate>Unconfirmed</span>
+            </span>
+          </div>
+        </div>
+
+        <div class="large-6 medium-6 small-12 columns">
+          <div class="text-right"  ng-class="{
+                'text-primary' : btx.action == 'received',
+                'text-warning': btx.action == 'sent', 
+                'text-gray': btx.action == 'moved'}">
+            <span class="size-21">
+                <span ng-if="!$root.updatingBalance">
+                <span ng-if="btx.action == 'received'">+</span><span ng-if="btx.action == 'sent'">-</span>{{btx.amount}}
+                </span>
+                {{$root.wallet.settings.unitName}}
+            </span>
+            <span class="size-14 db m5t text-gray" ng-show="btx.alternativeAmount">
+              {{btx.alternativeAmount}} {{$root.wallet.settings.alternativeIsoCode}}
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+  </div>
+  <div ng-show="blockchain_txs[0].txid">
+    <div class="row">
+      <div class="large-9 columns">
+        <pagination page="currentPage" total-items="totalItems" items-per-page="itemsPerPage" on-select-page="selectPage(page)" max-size="10" />
+      </div>
+      <div class="large-3 columns m5t text-right size-12 show-for-large-up">
+        <div ng-if="generating">
+          <i class="fi-bitcoin-circle icon-rotate spinner"></i> 
+          <span translate>Generating file...</span>
+        </div>
+        <div ng-if="!generating">
+          <a class="text-gray" href="#!/history" ng-click="downloadHistory();">
+            <i class="fi-page-export-csv"></i> 
+            <span translate>Download CSV file</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,33 @@
+<div class="m20t text-center ">
+  <div class="size-48">
+  {{md.unitTotal}} {{$root.wallet.settings.unitName}}
+  </div>
+  <div class="size-18 m5t text-gray">
+    {{ alternative }} {{ alternativeIsoCode }}
+  </div>
+  <a class="close-reveal-modal" ng-click="cancel()"><i class="fi-x size-18"></i></a>
+</div>
+<div class="line-b m10v"></div>
+
+<div class="ellipsis m10v">
+  <i>To:</i> {{md.domain}}
+</div>
+
+<div class="m10v">
+  <i>Certified by:</i>
+  <span ng-show="md.pr.ca"><i class="fi-lock color-greeni"></i> {{md.pr.ca}}</span>
+  <span ng-show="!md.pr.ca"><i class="fi-unlock color-yellowi"></i> Untrusted</span>
+</div>
+
+<div ng-if="md.pr.pd.memo" class="m10v lh140">
+  <i>Merchant Message:</i>  <span class="text-gray">
+  {{md.pr.pd.memo}}
+</div>
+
+
+<div ng-if="md.expirationDate" class="m10v">
+  <i>Expires:</i> {{md.expirationDate | amTimeAgo }}
+</div>
+
+
+

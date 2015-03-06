@@ -1,0 +1,64 @@
+<div class="title">
+  <h1>
+    {{$root.title}} 
+    <small ng-if="$root.wallet">
+      <a class="text-gray" ng-click="refresh()" ng-if="$root.wallet.isComplete() && !$root.updatingBalance">
+        <i class="fi-refresh"></i>
+      </a>
+      <span ng-if="$root.updatingBalance">
+        <i class="fi-bitcoin-circle icon-rotate spinner"></i>
+      </span>
+    </small>
+  </h1> 
+</div>
+
+
+
+<div class="menu" ng-mouseover="hoverIn()" ng-mouseleave="hoverOut()" ng-init="init()" ng-click="hoverMenu = !hoverMenu">
+  <a class="dropdown ellipsis text-gray pr" ng-class="{'hover': hoverMenu}">
+    <div class="photo-container">
+      <img gravatar-src="'{{username}}'" gravatar-size="35">
+    </div>
+    <span class="need-backup" ng-if="!$root.needsEmailConfirmation && $root.iden.backupNeeded">
+      <i class="fi-alert vm"></i> 
+    </span>
+    <span class="m15t">{{username}} </span>
+    <i class="icon-arrow-down2 size-16 vm"></i> 
+  </a>
+  <ul ng-show="hoverMenu" class="size-16 text-gray" ng-class="{'hover': hoverMenu}">
+    <li>
+      <a href="#!/create" title="Create new wallet">
+      <i class="fi-plus size-18 m10r"></i> {{'Create new wallet'|translate}}</a></li>
+    <li><a href="#!/join" title="Join shared wallet">
+      <i class="icon-people size-18 m10r"></i> {{'Join shared wallet'|translate}}</a></li>
+    <li><a href="#!/importAirdrop" title="Import Airdrop wallet">
+      <i class="icon-download size-18 m10r"></i> {{'Import Airdrop wallet'|translate}}</a></li>
+    <li><a href="#!/import" title="Import wallet">
+      <i class="icon-download size-18 m10r"></i> {{'Import wallet backup'|translate}}</a></li>
+    <li class="divider"></li>
+    <li><a href="#!/profile" title="Profile">
+      <i class="icon-person size-18 m10r"></i> {{'My Profile'|translate}}<span class="size-10 text-warning" ng-if="!$root.needsEmailConfirmation && $root.iden.backupNeeded"> [ Needs Backup ]</span></a>
+      </li> 
+    <li><a href="#!/" title="Close" ng-click="signout()">
+        <span ng-if="!$root.hasPin"><i class="icon-power size-18 m10r"></i> {{'Close'|translate}}</span>
+        <span ng-if="$root.hasPin"><i class="fi-lock size-18 m10r"></i> {{'Lock'|translate}}</span>
+      </a></li>
+
+    <li class="divider"></li>
+    <li><a ng-click="$root.openExternalLink('https://github.com/bitpay/copay/issues/new')">
+        <i class="fi-comment-quotes size-18 m10r"></i> {{'Leave feedback'|translate}}
+      </a>
+      </li> 
+
+
+  </ul>
+</div>
+
+<script>
+ //<![CDATA[
+   (function() {var s=document.createElement('script');
+     s.type='text/javascript';s.async=true;
+     s.src=('https:'==document.location.protocol?'https':'http') +
+     '://ribbit.groovehq.com/widgets/0a6745e3-a8f4-4aa4-87bf-59ca89be4a80/ticket.js'; var q = document.getElementsByTagName('script')[0];q.parentNode.insertBefore(s, q);})();
+ //]]>
+</script>

@@ -1,0 +1,298 @@
+/*
+ *
+ * Copay mobile CSS
+ *
+ */
+
+@media (max-width: 1024px) {
+
+  .loading-screen {
+    background-color: #2F6F6C;
+  }
+
+  .logo-setup {
+    margin: 0 0 1rem 0;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  .page, .main {
+    height: auto;
+  }
+
+  .main {
+    height: 92%;
+    margin-top: 30px;
+    margin-left: 0;
+    margin-bottom: -30px;
+    padding: 20px 0 80px 0;
+  }
+
+  .tab-bar {
+    display: block;
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+    background: #3C4E60;
+  }
+
+  .bottom-bar {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 5;
+    background: #2F6F6C;
+  }
+
+  .home, .settings, .createProfile, .import-profile {
+    overflow: hidden;
+    padding: 1rem 0;
+  }
+
+  .reveal-modal {
+    padding: 0.5rem;
+  } 
+
+  header {
+    height: 45px;
+    line-height: 110%;
+  }
+
+  header h1 {
+    color: #fff;
+    text-align: center;
+  }
+
+  .col3 a {
+    height: 45px;
+    padding: 12px 5px;
+  }
+
+  .status {
+    bottom: 66px;
+    left: 0;
+  }
+
+  .right-off-canvas-menu {
+    background-color: #213140 ;
+  }
+
+  .left-off-canvas-menu {
+    background: #E4E8EC;
+    line-height: 24px;
+  }
+
+  .off-canvas-wrap,.inner-wrap{
+    height:100%;   
+  }
+
+  .page{
+    height:100%;   
+  }
+
+  .avatar-wallet {
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 0.35rem 0.65rem;
+  }
+
+  
+  .copayers {
+    position: relative;
+    padding: 0;
+    overflow-y: none;
+  }
+
+  ul.copayer-list img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .tab-bar-section {
+    text-align: left;
+  }
+
+  .setup-page {
+    height: 100%;
+  }
+
+  .hide-tab-bar {
+    display: none;
+  }
+
+  .tab-bar h1 {
+    font-weight: 100;
+    text-align: center;
+  }
+
+  ul.off-canvas-list li a {
+    text-transform: uppercase;
+    font-size: 12px;
+    vertical-align: middle;
+    font-weight: 100;
+    border-bottom: transparent;
+    padding: 0.66667rem 1rem;
+    color: #7A8C9E;
+    border-top: 1px solid rgba(255,255,255,0.25);
+    -moz-box-shadow:    0px -1px 0px 0px rgba(165,178,191,0.15);
+    box-shadow:         0px -1px 0px 0px rgba(165,178,191,0.15);
+  }
+
+  ul.off-canvas-list li a i {
+    vertical-align: middle;
+  }
+
+  ul.off-canvas-list li a.wallet-item {
+    border: none;
+    -moz-box-shadow:    none;
+    box-shadow:         none;
+  }
+
+  ul.off-canvas-list li a i {
+    opacity: 0.6;
+  }
+
+  .bottombar-item a {
+    color: #7A8C9E;
+    padding: 0.5rem 0;
+    display: block;
+    border-bottom: 3px solid transparent;
+  }
+
+  .bottombar-item a.active {
+    color: #E4E8EC;
+    background-color: #213140;
+    border-bottom: 3px solid #1ABC9C;
+  }
+
+  .box-founds {
+    background-color: #213140;
+  }
+
+  .left-small {
+    border-right: none;
+  }
+
+  .right-small {
+    border-left: none;
+  }
+
+  .right-small a {
+    color: white;
+  }
+
+  .panel.last-transactions {
+    margin-bottom: 3.25rem;
+  }
+
+  .addresses .list-addr contact {
+    margin-left: 0;
+    font-size: 14px;
+  }
+  
+  a.missing-copayers {
+    bottom: -34px;
+    text-align: center;
+    padding: .7rem;
+    width: 100%;
+  }
+
+  .button, button {
+    padding: 1rem 1.2rem 1.0625rem;
+  }
+
+  .box-setup {
+    margin-bottom: 50px;
+  }
+
+  .footer-setup {
+    margin-bottom: 50px;
+  } 
+
+  .label {
+    font-size: 80%;
+    padding: 0.15rem 0.2rem;
+  }
+
+  .side-nav.wallets {
+    z-index: 100;
+    overflow-y: inherit;
+    position: inherit;
+    height: auto;
+    border-bottom: none;
+  }
+
+  .side-nav li.nav-item.selected {
+    background-color: #3C4E60;
+  }
+
+  .tooltip {
+    display: none !important;
+  }
+
+  .move-right .exit-off-canvas,
+  .move-left .exit-off-canvas {
+    box-shadow: none;
+  }
+
+  /* Remove all vendors hover */
+
+  ul.off-canvas-list li a:hover {
+    background: none;
+  }
+
+  .side-nav li a:not(.button) {
+    padding: 0;
+  }
+
+}
+
+@media (max-width: 640px) {
+  .tx-comment {
+    border-top: 1px solid #eee;    
+    padding-top: 10px;
+    margin-top: 10px;
+  }
+
+  /* notifications */
+
+  .dr-notification {
+    width: 100%;
+  }
+
+  .dr-notification-container {
+    width: 100%;
+  }
+
+  .dr-notification-container.top {
+    top: 2.813rem;
+  }
+
+  .dr-notification-wrapper {
+    width: 100%;
+    margin: 0;
+  }
+
+  .dr-notification-close-btn {
+    font-size: 20px;
+  }
+
+  .dr-notification-image {
+    font-size: 30px;
+  }
+
+  .dr-notification-text {
+    font-size: 10px;
+    line-height: 100%;
+  }
+
+  .dr-notification-image i {
+    padding: 15px;
+  }
+
+}
+

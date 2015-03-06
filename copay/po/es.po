@@ -1,0 +1,1003 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Copay\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.8\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: views/create.html
+msgid "(*) The limits are imposed by the bitcoin network."
+msgstr "(*) Los límites son impuestos por la red de bitcoin."
+
+#: views/dummy-translations.html
+msgid "A transaction was rejected by"
+msgstr "Una transacción fue rechazada por"
+
+#: views/dummy-translations.html
+msgid "A transaction was signed by"
+msgstr "Una transacción fue firmada por"
+
+#: views/more.html
+msgid ""
+"ALL Transactions Proposals will be discarted. This needs to be done on "
+"<b>ALL</b> peers of a wallet, to prevent the old proposals to be resynced "
+"again."
+msgstr ""
+"TODAS las Propuestas de Transacciones serán descartadas. Es necesario que lo "
+"hagan <b>TODOS</b> los compañeros del monedero, para prevenir que las viejas "
+"propuestas sean re sincronizadas de nuevo."
+
+#: views/send.html views/modals/address-book.html
+msgid "Add"
+msgstr "Agregar"
+
+#: views/send.html views/modals/address-book.html
+msgid "Address"
+msgstr "Dirección"
+
+#: views/send.html views/modals/address-book.html
+msgid "Address Book"
+msgstr "Libreta de Direcciones"
+
+#: views/addresses.html
+msgid "Addresses"
+msgstr "Direcciones"
+
+#: views/more.html
+msgid "Alternative Currency"
+msgstr "Moneda Alternativa"
+
+#: views/send.html
+msgid "Amount"
+msgstr "Importe"
+
+#: views/send.html
+msgid "Amount in"
+msgstr "Importe en"
+
+#: views/more.html
+msgid "Are you sure to delete this wallet from this computer?"
+msgstr "¿Estas seguro de borrar este monedero de tu computadora?"
+
+#: views/create.html views/import.html views/join.html views/open.html
+#: views/settings.html views/warning.html views/errors/404.html
+msgid "Back"
+msgstr "Volver"
+
+#: views/more.html
+msgid "Backup"
+msgstr "Copia de Seguridad"
+
+#: views/dummy-translations.html
+msgid "Backup created"
+msgstr "Copia de Seguridad creada"
+
+#: views/copayers.html
+msgid "Backup wallet"
+msgstr "Hacer copia de seguridad"
+
+#: views/includes/sidebar-mobile.html views/includes/sidebar.html
+msgid "Balance"
+msgstr "Balance"
+
+#: views/includes/sidebar-mobile.html views/includes/sidebar.html
+msgid "Balance locked in pending transaction proposals"
+msgstr "Balance bloqueado en las propuestas de transacción pendientes"
+
+#: views/send.html
+msgid "Digibyte address"
+msgstr "Dirección bitcoin"
+
+#: views/includes/transaction.html
+msgid "Broadcast Transaction"
+msgstr "Emitir Transacción"
+
+#: views/unsupported.html
+msgid "Browser unsupported"
+msgstr "Navegador no soportado"
+
+#: views/send.html views/modals/address-book.html
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: views/send.html
+msgid "Certificate:"
+msgstr "Certificado:"
+
+#: views/create.html
+msgid "Choose a password"
+msgstr "Escribe una contraseña"
+
+#: views/import.html
+msgid "Choose backup file from your computer"
+msgstr "Seleccione el archivo backup de su computadora"
+
+#: views/join.html
+msgid "Choose your password"
+msgstr "Escribe tu contraseña"
+
+#: views/includes/sidebar-mobile.html views/includes/sidebar.html
+msgid "Close"
+msgstr "Cerrar"
+
+#: views/transactions.html
+msgid "Confirmations"
+msgstr "Confirmaciones"
+
+#: views/join.html
+msgid "Connecting to Insight Wallet Server..."
+msgstr "Conectando al Servidor Insight..."
+
+#: views/open.html
+msgid "Connecting..."
+msgstr "Conectando..."
+
+#: views/warning.html
+msgid "Continue anyways"
+msgstr "Continuar de todas maneras"
+
+#: views/includes/peer-list.html
+msgid "Copayers"
+msgstr "Compañeros"
+
+#: views/dummy-translations.html
+msgid "Copied to clipboard"
+msgstr "Copiado al portapapeles"
+
+#: views/modals/qr-address.html
+msgid "Copy to clipboard"
+msgstr "Copiar al portapapeles"
+
+#: views/dummy-translations.html
+msgid ""
+"Could not connect to the Insight server. Check your settings and network "
+"configuration"
+msgstr ""
+"No se pudo conectar con el servidor Insight. Verifica la configuración de red"
+
+#: views/home.html
+msgid "Create a new wallet"
+msgstr "Crear un nuevo monedero"
+
+#: views/home.html
+msgid "Create a wallet"
+msgstr "Crea un monedero"
+
+#: views/create.html
+msgid "Create new wallet"
+msgstr "Crear nuevo monedero"
+
+#: views/create.html
+msgid "Create {{requiredCopayers}}-of-{{totalCopayers}} wallet"
+msgstr "Crea monedero {{requiredCopayers}}-de-{{totalCopayers}}"
+
+#: views/copayers.html
+msgid "Creating and storing a backup will allow you to recover wallet funds"
+msgstr ""
+"Crear y guardar una copia de seguridad  le permitirá recuperar el dinero de "
+"su monedero"
+
+#: views/create.html
+msgid "Creating wallet..."
+msgstr "Creando monedero..."
+
+#: views/send.html
+msgid "Creator"
+msgstr "Creador"
+
+#: views/send.html
+msgid "Date"
+msgstr "Fecha"
+
+#: views/more.html
+msgid "Delete"
+msgstr "Eliminar"
+
+#: views/more.html
+msgid "Delete Wallet"
+msgstr "Borrar Monedero"
+
+#: views/copayers.html
+msgid "Download Backup"
+msgstr "Descargar Copia de Seguridad"
+
+#: views/more.html
+msgid "Download File"
+msgstr "Descargar Archivo"
+
+#: views/send.html
+msgid "Empty. Create an alias for your addresses"
+msgstr "Vacío. Crea una etiqueta para tus direcciones"
+
+#: views/dummy-translations.html
+msgid "Encrypted backup file saved"
+msgstr "Archivo de copia de seguridad encriptado guardado"
+
+#: views/dummy-translations.html
+msgid "Error updating indexes:"
+msgstr "Error al actualizar índices:"
+
+#: views/create.html
+msgid "Family vacation funds"
+msgstr "Fondos para vacaciones en familia"
+
+#: views/dummy-translations.html
+msgid "Fatal error connecting to Insight server"
+msgstr "Error fatal al conectar con el servidor Insight"
+
+#: views/transactions.html views/includes/transaction.html
+msgid "Fee"
+msgstr "Tasa"
+
+#: views/dummy-translations.html
+msgid "Finished"
+msgstr "Finalizado"
+
+#: views/dummy-translations.html
+msgid "Form Error"
+msgstr "Error en formulario"
+
+#: views/dummy-translations.html
+msgid "Funds received!"
+msgstr "¡Fondos recibidos!"
+
+#: views/join.html views/send.html
+msgid "Get QR code"
+msgstr "Obtener código QR"
+
+#: views/create.html views/import.html views/join.html views/more.html
+#: views/transactions.html
+msgid "Hide"
+msgstr "Ocultar"
+
+#: views/dummy-translations.html
+msgid "History"
+msgstr "Historial"
+
+#: views/more.html
+msgid ""
+"If all funds have been removed from your wallet and you do not wish to have "
+"the wallet data stored on your computer anymore, you can delete your wallet."
+msgstr ""
+"Si todos los fondos fueron removidos de tu monedero y no deseas tener los "
+"datos guardados en tu computadora, puedes eliminar tu monedero."
+
+#: views/dummy-translations.html views/home.html
+msgid "Import a backup"
+msgstr "Importar una copia de seguridad"
+
+#: views/import.html
+msgid "Import backup"
+msgstr "Importar copia de seguridad"
+
+#: views/dummy-translations.html
+msgid "Importing wallet - Reading backup..."
+msgstr "Importando monedero - Leyendo archivo..."
+
+#: views/dummy-translations.html
+msgid "Importing wallet - Setting things up..."
+msgstr "Importando monedero - Configurando..."
+
+#: views/dummy-translations.html
+msgid "Importing wallet - We are almost there..."
+msgstr "Importando monedero - Finalizando..."
+
+#: views/send.html
+msgid "Including fee of"
+msgstr "Incluye tasa de"
+
+#: views/settings.html
+msgid "Insight API server"
+msgstr "Servidor de API Insight"
+
+#: views/settings.html
+msgid ""
+"Insight API server is open-source software. You can run your own instances, "
+"check <a href=\"http://insight.is\" target=\"_blank\">Insight API Homepage</"
+"a>"
+msgstr ""
+"Servidor de API insight es un software código-abierto. Puedes correr tu "
+"propia instancia en <a href=\"http://insight.is\" target=\"_blank\">Insight "
+"API Homepage</a>"
+
+#: views/send.html
+msgid "Insufficient funds"
+msgstr "Fondos insuficientes"
+
+#: views/dummy-translations.html
+msgid "It's important that you update your wallet at https://copay.io"
+msgstr "Es importante que actualices tu monedero en https://copay.io"
+
+#: views/more.html
+msgid ""
+"It's important to backup your wallet so that you can recover it in case of "
+"disaster"
+msgstr ""
+"Es importante hacer copia de seguridad de tu monedero para que puedas "
+"recuperarlo en caso de pérdidas de datos de tu computadora"
+
+#: views/join.html
+msgid "Join"
+msgstr "Unirse"
+
+#: views/home.html views/join.html
+msgid "Join a Wallet in Creation"
+msgstr "Unirse a un monedero"
+
+#: views/send.html views/modals/address-book.html
+msgid "Label"
+msgstr "Etiqueta"
+
+#: views/settings.html
+msgid "Language"
+msgstr "Idioma"
+
+#: views/transactions.html
+msgid "Last transactions"
+msgstr "Últimas transacciones"
+
+#: views/send.html
+msgid "Leave a private message to your copayers"
+msgstr "Dejar mensaje privado a tus compañeros"
+
+#: views/includes/sidebar-mobile.html views/includes/sidebar.html
+msgid "Locked"
+msgstr "Bloqueado"
+
+#: views/dummy-translations.html
+msgid "Login Required"
+msgstr "Inicio de Sesión Requerido"
+
+#: views/includes/sidebar.html
+msgid "Manual Update"
+msgstr "Actualización Manual"
+
+#: views/more.html
+msgid "Master Private Key"
+msgstr "Master Private Key"
+
+#: views/includes/copayer.html views/includes/peer-list.html
+msgid "Me"
+msgstr "Yo"
+
+#: views/send.html
+msgid "Merchant Data:"
+msgstr "Negocio:"
+
+#: views/create.html
+msgid "Name"
+msgstr "Nombre"
+
+#: index.html
+msgid "Network Error. Attempting to reconnect..."
+msgstr "Error de Red. Intentando reconectar..."
+
+#: views/dummy-translations.html
+msgid "Networking Error"
+msgstr "Error de Red"
+
+#: views/dummy-translations.html
+msgid "New Transaction"
+msgstr "Nueva Transacción"
+
+#: views/copayers.html
+msgid "New Wallet Created"
+msgstr "Nuevo Monedero Creado"
+
+#: views/dummy-translations.html
+msgid "New entry has been created"
+msgstr "Nueva entrada fue creada"
+
+#: views/create.html
+msgid "Next"
+msgstr "Siguiente"
+
+#: views/transactions.html
+msgid "No transactions proposals yet."
+msgstr "Sin propuestas de transacciones aún."
+
+#: views/transactions.html
+msgid "No transactions yet."
+msgstr "Sin propuestas de transacciones aún."
+
+#: views/modals/address-book.html
+msgid "Not valid"
+msgstr "No válido"
+
+#: views/send.html
+msgid "Note"
+msgstr "Nota"
+
+#: views/copayers.html
+msgid "One person has"
+msgstr "Una persona"
+
+#: views/includes/transaction.html
+msgid "One signature missing"
+msgstr "Falta una firma"
+
+#: views/open.html
+msgid "Open"
+msgstr "Abrir"
+
+#: views/open.html
+msgid "Open Wallet"
+msgstr "Abrir Monedero"
+
+#: views/home.html
+msgid "Open a wallet"
+msgstr "Abrir un monedero"
+
+#: views/modals/qr-address.html
+msgid "Open in external application"
+msgstr "Abrir en una aplicación externa"
+
+#: views/warning.html
+msgid ""
+"Opening the wallet in multiple browser tabs could lead to unexpected results"
+msgstr ""
+"Abrir el monedero en varias ventanas del mismo navegador podría conducir a "
+"resultados inesperados"
+
+#: views/errors/404.html
+msgid "Page not found"
+msgstr "Página no encontrada"
+
+#: views/import.html
+msgid "Password"
+msgstr "Contraseña"
+
+#: views/create.html views/join.html
+msgid "Passwords must match"
+msgstr "Las contraseñas deben coincidir"
+
+#: views/join.html
+msgid "Paste wallet secret here"
+msgstr "Pegar código secreto del monedero aquí"
+
+#: views/send.html
+msgid "Payment Expiration:"
+msgstr "Vencimiento de Pago:"
+
+#: views/more.html
+msgid ""
+"Pending Transactions Proposals will be discarted. This needs to be done on "
+"<b>ALL</b> peers of a wallet, to prevent the old proposals to be resynced "
+"again."
+msgstr ""
+"Las Propuestas de Transacciones Pendientes serán descartadas. Esto es "
+"necesario hacerlo con <b>TODOS</b> los compañeros del monedero, para "
+"prevenir que viejas propuestas sean re sincronizadas de nuevo."
+
+#: views/dummy-translations.html
+msgid "Please complete required fields"
+msgstr "Por favor complete los campos requeridos"
+
+#: views/dummy-translations.html
+msgid "Please enter the required fields"
+msgstr "Por favor ingrese los campos requeridos"
+
+#: views/dummy-translations.html
+msgid "Please open wallet to complete payment"
+msgstr "Por favor abrir un monedero para completar el pago"
+
+#: views/dummy-translations.html
+msgid "Please update your wallet at https://copay.io"
+msgstr "Por favor actualiza tu monedero de https://copay.io"
+
+#: views/dummy-translations.html
+msgid "Please, select your backup file"
+msgstr "Por favor, selecciona el archivo de copia de seguridad"
+
+#: views/uri-payment.html
+msgid "Preparing payment..."
+msgstr "Preparando pago..."
+
+#: views/includes/transaction.html
+msgid "Proposal ID"
+msgstr "ID de Propuesta"
+
+#: views/more.html
+msgid "Purge"
+msgstr "Purgar"
+
+#: views/more.html
+msgid "Purge ALL Transaction Proposals"
+msgstr "Purgar TODAS las Propuestas de Transacciones"
+
+#: views/more.html
+msgid "Purge All"
+msgstr "Purgar Todo"
+
+#: views/more.html
+msgid "Purge Pending Transaction Proposals"
+msgstr "Purgar Propuestas de Transacciones Pendientes"
+
+#: views/includes/copayer.html
+msgid "Ready"
+msgstr "Listo"
+
+#: views/dummy-translations.html
+msgid "Receive"
+msgstr "Recibir"
+
+#: views/dummy-translations.html
+msgid "Received corrupt message from"
+msgstr "Se recibió un mensaje corrupto de"
+
+#: views/dummy-translations.html
+msgid "Received corrupt transaction from"
+msgstr "Se recibió una transacción corrupta de"
+
+#: views/includes/transaction.html
+msgid "Reject"
+msgstr "Rechazar"
+
+#: views/create.html views/join.html
+msgid "Repeat password"
+msgstr "Repite la contraseña"
+
+#: views/import.html views/join.html views/modals/address-book.html
+msgid "Required"
+msgstr "Requerido"
+
+#: views/more.html views/settings.html
+msgid "Save"
+msgstr "Guardar"
+
+#: views/more.html
+msgid "Scan"
+msgstr "Explorar"
+
+#: views/more.html
+msgid "Scan Wallet Addresses"
+msgstr "Explorar Direcciones del Monedero"
+
+#: views/dummy-translations.html
+msgid "Scaning for transactions"
+msgstr "Explorando transacciones"
+
+#: views/import.html
+msgid "Select a backup file"
+msgstr "Seleccionar el archivo de copia de seguridad"
+
+#: views/create.html
+msgid "Select required signatures (*)"
+msgstr "Seleccione las firmas requeridas (*)"
+
+#: views/create.html
+msgid "Select total number of copayers (*)"
+msgstr "Seleccione el total de compañeros (*)"
+
+#: views/dummy-translations.html
+msgid "Send"
+msgstr "Enviar"
+
+#: views/send.html
+msgid "Send Proposals"
+msgstr "Enviar Propuestas"
+
+#: views/send.html
+msgid "Send all funds"
+msgstr "Enviar todos los fondos"
+
+#: views/send.html
+msgid "Send to"
+msgstr "Enviar a"
+
+#: views/includes/transaction.html
+msgid "Sent"
+msgstr "Enviado"
+
+#: views/send.html
+msgid "Server Says:"
+msgstr "Mensaje del Servidor:"
+
+#: views/dummy-translations.html
+msgid "Session closed"
+msgstr "Sesión cerrada"
+
+#: views/dummy-translations.html
+msgid "Session closed because a long time of inactivity"
+msgstr "La sesión fue cerrada por mucho tiempo de inactividad"
+
+#: views/dummy-translations.html
+msgid "Session will be closed"
+msgstr "La sesión se cerrará"
+
+#: views/home.html views/more.html
+msgid "Settings"
+msgstr "Configuración"
+
+#: views/copayers.html
+msgid "Share this secret with your other copayers"
+msgstr "Compartir el código secreto con tus otros compañeros"
+
+#: views/create.html views/import.html views/join.html views/more.html
+#: views/transactions.html
+msgid "Show"
+msgstr "Mostrar"
+
+#: views/addresses.html
+msgid "Show all"
+msgstr "Ver todo"
+
+#: views/addresses.html
+msgid "Show less"
+msgstr "Ver menos"
+
+#: views/includes/transaction.html
+msgid "Sign"
+msgstr "Firmar"
+
+#: views/copayers.html
+msgid "Skip Backup"
+msgstr "Saltear Copia de Seguridad"
+
+#: views/import.html
+msgid "Skip public keys from peers"
+msgstr "Ignorar claves pública de los compañeros"
+
+#: views/import.html
+msgid "Skip transaction proposals from Backup"
+msgstr "Ignorar propuestas de transacciones desde la Copia de Seguridad"
+
+#: views/import.html
+msgid "Skipping fields: {{skipFields}}"
+msgstr "Saltear campos: {{skipFields}}"
+
+#: views/dummy-translations.html
+msgid "Success"
+msgstr "Listo"
+
+#: views/dummy-translations.html
+msgid "The balance is updated using the derived addresses"
+msgstr "El balance es actualizado utilizando direcciones derivadas"
+
+#: views/dummy-translations.html
+msgid "The secret string you entered is invalid"
+msgstr "La palabra secreta ingresada no es válida"
+
+#: views/dummy-translations.html
+msgid "The transaction proposal has been created"
+msgstr "La propuesta de transacción fue creada"
+
+#: views/dummy-translations.html
+msgid "The wallet is full"
+msgstr "El monedero esta completo"
+
+#: views/dummy-translations.html
+msgid "There was an error sending the transaction"
+msgstr "Hubo un error al enviar la transacción"
+
+#: views/dummy-translations.html
+msgid "There was an error signing the transaction"
+msgstr "Hubo un error al firmar la transacción"
+
+#: views/warning.html
+msgid "This wallet appears to be currently open."
+msgstr "Este monedero parece estar actualmente abierto."
+
+#: views/more.html
+msgid ""
+"This will scan the blockchain looking for addresses derived from your "
+"wallet, in case you have funds in addresses not yet generated (e.g.: you "
+"restored an old backup). This will also trigger a syncronization of "
+"addresses to other connected peers."
+msgstr ""
+"Esto verificará la blockchain buscando direcciones derivadas de tu monedero, "
+"en caso de tener fondo en direcciones que no fueron generadas aún (por ej.: "
+"si restauraste una copia de seguridad antigua). Esto también activará la "
+"sincronización de direcciones a los demás compañeros conectados."
+
+#: views/send.html
+msgid "To"
+msgstr "A"
+
+#: views/transactions.html
+msgid "Total"
+msgstr "Total"
+
+#: views/send.html
+msgid "Total amount for this transaction:"
+msgstr "Cantidad total de esta transacción:"
+
+#: views/dummy-translations.html
+msgid "Transaction Error"
+msgstr "Error en Transacción"
+
+#: views/includes/transaction.html
+msgid "Transaction ID"
+msgstr "ID de Transacción"
+
+#: views/transactions.html
+msgid "Transaction Proposals"
+msgstr "Propuestas de Transacción"
+
+#: views/dummy-translations.html
+msgid "Transaction Update"
+msgstr "Actualización de una Transacción"
+
+#: views/dummy-translations.html
+msgid "Transaction broadcasted"
+msgstr "Transacción transmitida"
+
+#: views/includes/transaction.html
+msgid "Transaction finally rejected"
+msgstr "Transacción finalmente rechazada"
+
+#: views/dummy-translations.html
+msgid "Transaction rejected"
+msgstr "Transacción rechazada"
+
+#: views/dummy-translations.html
+msgid "Transactions Proposals Purged"
+msgstr "Propuestas de Transacciones Purgadas"
+
+#: views/dummy-translations.html
+msgid "Unable to send transaction proposal"
+msgstr "No se puede enviar propuesta de transacción"
+
+#: views/dummy-translations.html
+msgid "Updating balance"
+msgstr "Actualizando balance"
+
+#: views/send.html
+msgid "Use all funds"
+msgstr "Todos los fondos"
+
+#: views/create.html
+msgid "Use test network"
+msgstr "Red de prueba"
+
+#: views/join.html
+msgid "User information"
+msgstr "Información de Usuario"
+
+#: views/dummy-translations.html
+msgid "Using derived addresses from your wallet"
+msgstr "Usando direcciones derivadas de tu monedero"
+
+#: views/modals/address-book.html
+msgid "Valid"
+msgstr "Válido"
+
+#: views/copayers.html
+msgid "Waiting Copayers for {{$root.wallet.getName()}}"
+msgstr "Esperando compañeros a {{$root.wallet.getName()}}"
+
+#: views/copayers.html
+msgid "Waiting copayers"
+msgstr "Esperando compañeros"
+
+#: views/copayers.html
+msgid "Waiting for other copayers to make a Backup"
+msgstr "Esperando que los otros compañeros hagan su copia de seguridad"
+
+#: views/copayers.html
+msgid "Waiting..."
+msgstr "Esperando..."
+
+#: views/join.html
+msgid "Wallet Secret"
+msgstr "Código Secreto del Monedero"
+
+#: views/join.html
+msgid "Wallet Secret is not valid!"
+msgstr "¡El código secreto no es válido!"
+
+#: views/more.html
+msgid "Wallet Unit"
+msgstr "Unidad del monedero"
+
+#: views/create.html
+msgid "Wallet name"
+msgstr "Nombre del monedero"
+
+#: views/dummy-translations.html
+msgid "Wallet network configuration missmatch"
+msgstr "Configuración de la Red del monedero no coinciden"
+
+#: views/warning.html
+msgid "Warning!"
+msgstr "¡Advertencia!"
+
+#: views/dummy-translations.html
+msgid "Wrong password"
+msgstr "Contraseña incorrecta"
+
+#: views/dummy-translations.html
+msgid "You have"
+msgstr "Tienes"
+
+#: views/dummy-translations.html
+msgid "You have a pending transaction proposal"
+msgstr "Tienes una propuesta de transacción pendiente"
+
+#: views/dummy-translations.html
+msgid "You rejected the transaction successfully"
+msgstr "Rechazaste la transacción con éxito"
+
+#: views/more.html
+msgid ""
+"Your master private key contains the information to sign <b>any</b> "
+"transaction on this wallet. Handle with care."
+msgstr ""
+"Tu \"master private key\" contiene la información para firmar <b>cualquier</"
+"b> transacción de este monedero. Tenga cuidado al usar."
+
+#: views/create.html
+msgid "Your name"
+msgstr "Tu nombre"
+
+#: views/join.html
+msgid "Your name (optional)"
+msgstr "Tu nombre (opcional)"
+
+#: views/create.html views/open.html
+msgid "Your password"
+msgstr "Tu contraseña"
+
+#: views/dummy-translations.html
+msgid "Your session is about to expire due to inactivity in"
+msgstr "Tu sesión está va a expirar por inactividad en"
+
+#: views/import.html
+msgid "Your wallet password"
+msgstr "Contraseña de tu monedero"
+
+#: views/create.html views/import.html views/join.html views/more.html
+msgid "advanced options"
+msgstr "opciones avanzadas"
+
+#: views/dummy-translations.html
+msgid "available."
+msgstr "disponible."
+
+#: views/addresses.html
+msgid "change"
+msgstr "vuelto"
+
+#: views/transactions.html
+msgid "first seen at"
+msgstr "Visto el"
+
+#: views/transactions.html
+msgid "mined"
+msgstr "minado el"
+
+#: views/send.html
+msgid "not valid"
+msgstr "no válido"
+
+#: views/copayers.html views/includes/peer-list.html
+msgid "of"
+msgstr "de"
+
+#: views/send.html
+msgid "optional"
+msgstr "opcional"
+
+#: views/dummy-translations.html
+msgid "pending transaction proposals"
+msgstr "propuestas de transacciones pendientes"
+
+#: views/copayers.html
+msgid "people have"
+msgstr "personas"
+
+#: views/send.html
+msgid "required"
+msgstr "requerido"
+
+#: views/dummy-translations.html
+msgid "seconds"
+msgstr "segundos"
+
+#: views/send.html
+msgid "too long!"
+msgstr "¡demasiado largo!"
+
+#: views/dummy-translations.html
+msgid "transaction proposal purged"
+msgstr "propuestas de transacciones purgadas"
+
+#: views/send.html
+msgid "valid!"
+msgstr "¡válido!"
+
+#: views/copayers.html
+msgid "yet to backup the wallet."
+msgstr "deben hacer su copia de seguridad"
+
+#: views/copayers.html
+msgid "yet to join."
+msgstr "deben unirse"
+
+#: views/includes/transaction.html
+msgid "{{tx.missingSignatures}} signatures missing"
+msgstr "Faltan {{tx.missingSignatures}} firmas"
+
+#, fuzzy
+#~ msgid "<em><strong>No transactions yet.</strong></em>"
+#~ msgstr "Aún no hay transacciones."
+
+#~ msgid "Authenticating and looking for peers..."
+#~ msgstr "Autenticando y buscando compañeros..."
+
+#~ msgid "Private Key (Hex)"
+#~ msgstr "Clave Privada (Hex)"
+
+#~ msgid "Scan Ended"
+#~ msgstr "Búsqueda Finalizada"
+
+#~ msgid "There is an error in the form."
+#~ msgstr "Hubo un error en el formulario."
+
+#, fuzzy
+#~ msgid "Wrong password que parece"
+#~ msgstr "Contraseña incorrecta"
+
+#~ msgid "Add Address"
+#~ msgstr "Agregar Dirección"
+
+#~ msgid "Add Address Book Entry"
+#~ msgstr "Nueva entrada"
+
+#~ msgid "Add New Entry"
+#~ msgstr "Nueva Entrada"
+
+#, fuzzy
+#~ msgid "Your Password"
+#~ msgstr "Tu contraseña"
+
+#~ msgid "Bitcoin Network"
+#~ msgstr "Red Bitcoin"
+
+#~ msgid "Delete wallet"
+#~ msgstr "Borrar monedero"
+
+#~ msgid "Download seed backup"
+#~ msgstr "Descargar copia de seguridad"
+
+#~ msgid ""
+#~ "Network has been fixed to <strong>{{networkName}}</strong> in this setup. "
+#~ "See <a href=\"https://copay.io\">copay.io</a> for options to use Copay on "
+#~ "both livenet and testnet."
+#~ msgstr ""
+#~ "La red fue fijada a <strong>{{networkName}}</strong> para esta "
+#~ "configuración. Ver <a href=\"https://copay.io\">copay.io</a> para más "
+#~ "opciones de uso de Copay en livenet y testnet."
+
+#~ msgid "Port"
+#~ msgstr "Puerto"
+
+#~ msgid "Use SSL"
+#~ msgstr "Usar SSL"
+
+#~ msgid "Your Wallet Password"
+#~ msgstr "Contraseña de tu Monedero"
+
+#~ msgid ""
+#~ "{{$root.wallet.requiredCopayers}}-of-{{$root.wallet.totalCopayers}} wallet"
+#~ msgstr "Monedero {{requiredCopayers}}-de-{{totalCopayers}}"
+
+#~ msgid "&laquo; Back"
+#~ msgstr "&laquo; Volver"
+
+#~ msgid "Fees"
+#~ msgstr "Tasas"
+
+#~ msgid ""
+#~ "Wallet\n"
+#~ "                name"
+#~ msgstr ""
+#~ "Nombre del\n"
+#~ "                monedero"

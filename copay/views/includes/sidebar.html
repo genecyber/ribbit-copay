@@ -1,0 +1,99 @@
+<div  style="background-color:#2F6F6C" ng-init="init()">
+  <header ng-show="$root.wallet">
+    <div class="col1">
+      <div class="avatar-wallet">{{$root.wallet.getName() | limitTo: 1}}</div>
+    </div>
+    <div class="col2" ng-class="{'col2_full':!wallets.length}">
+      <div class="oh m5t m10r"> 
+        <div class="right size-10">[ {{$root.wallet.requiredCopayers}} of {{$root.wallet.totalCopayers}} ]</div>
+        <div class="name-wallet">
+          <div class="ellipsis">{{$root.wallet.getName()}}</div>
+        </div> 
+      </div>
+      <div class="founds size-12">
+        <span ng-if="!$root.wallet.isComplete()">Waiting for copayers...</span>
+        <div ng-if="$root.wallet.isComplete()">
+          <span ng-if="$root.wallet.balanceInfo.updatingBalance"><i class="fi-bitcoin-circle icon-rotate spinner"></i></span>
+          <div ng-if="$root.wallet && !$root.wallet.balanceInfo.updatingBalance" data-options="disable_for_touch:true">
+            <b class="m5r">{{$root.wallet.balanceInfo.totalBalance || 0}} {{$root.wallet.settings.unitName}}</b>
+            <!--<span ng-if="$root.wallet.balanceInfo.alternativeBalanceAvailable" class="alt-currency">{{$root.wallet.balanceInfo.totalBalanceAlternative}} {{$root.wallet.balanceInfo.alternativeIsoCode}}</span>
+            <span ng-if="!$root.wallet.balanceInfo.alternativeBalanceAvailable" class="alt-currency">N/A</span>-->
+          </div> 
+        </div>
+      </div>
+    </div>
+    <div style="background-color:#2F6F6C" class="col3" ng-if="wallets.length > 1">
+      <a ng-class="{'selected':walletSelection}" 
+        ng-click="toggleWalletSelection()"> 
+        <span ng-show="!walletSelection">
+          <i class="icon-arrow-down2"></i>
+        </span>
+        <span ng-show="walletSelection">
+          <i class="icon-arrow-up2"></i>
+        </span> 
+      </a>
+    </div>
+  </header>
+  <div class="locked" ng-show="$root.wallet.balanceInfo.lockedBalance && !walletSelection">
+    <span class="text-gray">
+       {{'Locked'|translate}} &nbsp;
+    </span>
+    <span ng-if="$root.wallet.balanceInfo.updatingBalance"><i class="fi-bitcoin-circle icon-rotate spinner"></i></span>
+    <span ng-if="$root.wallet && !$root.wallet.balanceInfo.updatingBalance" class="text-gray">
+      <b>{{$root.wallet.balanceInfo.lockedBalance}} {{$root.wallet.settings.unitName}} </b> 
+      - {{$root.wallet.balanceInfo.lockedBalanceAlternative}} {{$root.wallet.balanceInfo.alternativeIsoCode}}
+    </span>
+
+  </div>
+
+  <div>
+    <ul style="background-color:#2F6F6C" class="side-nav wallets" ng-class="{'pullDown': walletSelection}" ng-show="wallets[0]">
+      <li 
+        ng-repeat="item in wallets track by $index" 
+        class="nav-item" 
+        ng-if="item.id != $root.wallet.id" 
+        ng-click="switchWallet(item.id)">
+        <div class="col1">
+          <div class="avatar-wallet">{{(item.name || item.id) | limitTo: 1}}</div>
+        </div>
+        <div class="col2">
+          <a href class="size-12 wallet-item">
+            <div class="oh">
+              <div class="right size-10 type-wallet">[ {{item.requiredCopayers}} of {{item.totalCopayers}} ]</div> 
+              <div class="ellipsis name-wallet">{{item.name || item.id}}</div>
+            </div>
+            <div class="oh">
+              <span ng-if="item.isComplete() && item.balanceInfo.updatingBalance"><i class="fi-bitcoin-circle icon-rotate spinner"></i></span>
+              <div ng-if="item.isComplete() && !item.balanceInfo.updatingBalance" data-options="disable_for_touch:true">
+                <b class="m5r size-12">{{item.balanceInfo.totalBalance || 0}} {{item.settings.unitName}}</b>
+                <span class="alt-currency size-10">{{item.balanceInfo.totalBalanceAlternative}} {{item.balanceInfo.alternativeIsoCode}}</span>
+              </div>
+              <span ng-if="!item.isComplete()">Waiting for copayers...</span>
+            </div>
+          </a>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <ul class="side-nav" ng-if="(!walletSelection || !wallets[0]) && $root.wallet.isComplete()">
+    <li data-ng-repeat="item in menu" ui-route="{{item.link}}" class="nav-item" data-ng-class="{active: isActive(item)}">
+      <a href="#!/{{item.link}}" ng-click="toggleCollapse()" class="db p20h">
+        <i class="size-21 m20r {{item.icon}}"></i> {{item.title|translate}}
+        <span class="right">
+          <span class="label alert" ng-if="item.link=='homeWallet' && $root.wallet.pendingTxProposalsCountForUs > 0">
+            {{$root.wallet.pendingTxProposalsCountForUs}}
+          </span>
+        </span>
+      </a>
+    </li>
+  </ul>
+
+  <div style="background-color:#2F6F6C" class="sidebar-footer text-center">
+    <a href="#!/" class="db">
+      <img src="https://ribbitrewards.me/wp-content/uploads/2014/08/frog-pose-1-246x275.png" alt="Copay" width="100">
+    </a>
+    <div ng-include="'views/includes/version.html'"></div>
+  </div>
+</div>
+

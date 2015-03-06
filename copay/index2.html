@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en" ng-csp>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Copay - Multisignature Wallet</title>
+  <style type="text/css">
+    .loadingpage {
+      height:100%;
+      overflow-y: auto;
+      overflow-x: none;
+      background: #2C3E50;
+      padding-top: 20%;
+      text-align: center;
+    }
+    [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+      display: none;
+    }
+  </style>
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-53868003-2', 'auto');
+    ga('send', 'pageview');
+  </script>
+</head>
+<body
+  ng-controller="IndexController" 
+  ng-swipe-disable-mouse 
+  ng-swipe-left="swipe()"
+  ng-swipe-right="swipe(true)">
+
+  <div id="loading" class="loadingpage">
+    <img src="img/ajax-loader.gif" alt="Loading...">
+  </div>
+  <div ng-cloak class="page ng-cloak">
+
+    <div ng-show="signingOut">
+      <div ng-include="'views/includes/loading.html'" ng-init="title = 'Signing out'"></div>
+    </div>
+
+    <div ng-show="sessionExpired" class="session-expired">
+      <i class="fi-clock size-72 text-gray"></i> 
+      <p class="text-gray size-18">Your session is about to expire due to inactivity in {{countdown}} seconds</p>
+    </div>
+
+    <div class="off-canvas-wrap" id="off-canvas-wrap" ng-show="!signingOut">
+      <div class="inner-wrap">
+        <span class="status" ng-if="$root.reconnecting">
+          <i class="fi-loop icon-rotate"></i>
+          <span translate> <strong class="size-16">Network Error</strong>.<br> Attempting to reconnect..</span>
+        </span>
+        <span class="status" ng-if="$root.needsEmailConfirmation"> 
+          <i class="fi-alert size-36 left m20r"></i>
+          <span translate> 
+            <strong class="size-16">Email not confirmed</strong>.<br> 
+            Please confirm your email address using the confirmation link at the message we sent you
+          </span>
+        </span>
+ 
+        <div style="background-color:#2F6F6C" ng-controller="SidebarController" ng-show="$root.iden && !$root.hideNavigation">
+          <nav class="tab-bar">
+            <section class="left-small">
+              <a class="left-off-canvas-toggle menu-icon" ><span></span></a>
+            </section>
+            <section class="right-small" ng-show="$root.iden && $root.iden.listWallets().length >1">
+              <a class="right-off-canvas-toggle p10"><i class="icon-wallet size-24"></i></a>
+            </section>
+
+            <section class="middle tab-bar-section">
+              <h1 class="title">
+                <img src="img/logo-negative-beta.svg" alt="Copay" width="60">
+              </h1>
+            </section>
+          </nav>
+
+          <nav class="left-off-canvas-menu" ng-show="$root.iden">
+            <div  style="background-color:#2F6F6C" ng-include="'views/includes/sidebar-mobile.html'"></div>
+          </nav>
+
+          <nav class="right-off-canvas-menu" ng-show="$root.iden && $root.iden.listWallets().length >1">
+            <div ng-include="'views/includes/walletbar-mobile.html'"></div>
+          </nav>
+          <div 
+ 	    style="background-color:#2F6F6C"
+            ng-if="$root.iden"
+            ng-include="'views/includes/sidebar.html'" 
+            role='navigation'
+            class="sidebar"></div>
+          <div class="bottom-bar" ng-if="$root.wallet &&
+            $root.wallet.isComplete() && !$root.wallet.isLocked">
+            <div ng-include="'views/includes/bottombar-mobile.html'"></div>
+          </div>
+        </div>
+
+        <div notifications="right top"></div> 
+
+        <div 
+          ng-controller="HeadController"
+          class="head show-for-large-up" 
+          ng-include="'views/includes/head.html'"
+          ng-if="$root.iden"
+          ng-class="{'dni':$root.hideNavigation}"
+        ></div>
+
+        <section ng-class="{'main':$root.iden && !$root.starting && !$root.hideNavigation}" ng-view></section> 
+
+        <a class="exit-off-canvas"></a>
+
+      </div>
+    </div>
+  </div>
+  
+  <link rel="stylesheet" href="css/vendors.min.css">
+  <link rel="stylesheet" href="css/copay.min.css">
+
+  <script src="lib/vendors.js"></script>
+  <script src="lib/angularjs-all.js"></script>
+
+  <!-- DO NOT DELETE THIS COMMET  -->
+  <!-- PLACEHOLDER: CORDOVA SRIPT -->
+
+  <script src="init.js"></script>
+  <script src="config.js"></script>
+  <script src="js/copayBundle.js"></script>
+  <script src="js/copayMain.js"></script>
+
+</body>
+</html>
